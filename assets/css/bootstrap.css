@@ -285,7 +285,7 @@ h4 {
 
 .h5,
 h5 {
-    font-size: 1.25rem
+    /* font-size: 1.25rem */
 }
 
 .h6,
@@ -7022,7 +7022,7 @@ fieldset:disabled .btn {
 .carousel-caption {
     position: absolute;
     right: 15%;
-    bottom: 1.25rem;
+    bottom: 50%;
     left: 15%;
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
