@@ -38,8 +38,10 @@ a{
     padding-top: 120px;
     padding-bottom: 120px;
 }
-.bg-color-icon{
-    background-color: #f5f6f2 !important;
+.bg-color{
+    background-color: rgba(255, 0, 0, 0.767) !important;
+    color:  white !important;
+    border: none;
     height: 45px;
     width: 45px;
     border-radius: 3px;
