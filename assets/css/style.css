@@ -38,3 +38,9 @@ a{
     padding-top: 120px;
     padding-bottom: 120px;
 }
+.bg-color-icon{
+    background-color: #f5f6f2 !important;
+    height: 45px;
+    width: 45px;
+    border-radius: 3px;
+}
