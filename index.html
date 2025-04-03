@@ -1,165 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add To Cart</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/bootstrap.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add To Cart</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
+
 <body>
-
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container d-flex align-items-center">
-              <a class="navbar-brand fw-semibold fs-2" href="#">Eluxia</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-3 fw-normal fs-5">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">Shop</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">Products</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">Pages</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">Blog</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">Contact</a>
-                  </li>
-                  
-                </ul>
-                <form class="d-flex gap-3 fs-5 fw-semibold" role="search">
-                  <button class="btn btn-warning"><i class="bi bi-search"></i></button>
-                  <button class="btn btn-warning"><i class="bi bi-person"></i></button>
-                  <button class="btn btn-warning"><i class="bi bi-heart"></i></button>
-                  <button type="button" class="btn  btn-warning position-relative">
-                    <i class="bi bi-bag-check"></i>
-                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="counter">
-                      0
-                      <span class="visually-hidden">unread messages</span>
-                    </span>
-                  </button>
-                </form>
-              </div>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand fw-semibold fs-2" href="#">Eluxia</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-3 fw-normal fs-5">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Pages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex gap-3" role="search">
+            <button class="btn-header"><i class="bi bi-search"></i></button>
+            <button class="btn-header"><i class="bi bi-person"></i></button>
+            <button class="btn-header"><i class="bi bi-heart"></i></button>
+            <button type="button" class="btn-header position-relative" onclick="window.location='./cart.html'">
+              <i class="bi bi-bag-check"></i>
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                id="counter">
+                0
+                <span class="visually-hidden">unread messages</span>
+              </span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <!-- hero Section -->
+    <section>
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner text-center d-flex align-items-center">
+          <div class="carousel-item active">
+            <img src="./assets/images/jwellery-6.jpg" class="d-block w-100 img-fluid" alt="...">
+            <div class="carousel-caption">
+              <h5 class="carousel-text lh-base"> Discover the
+                <br>Best of the Best
+              </h5>
+              <button class="Shop-colle-btn mt-5">Shop Collection </button>
             </div>
-        </nav>
-    </header>
-    <main>
-        <!-- hero Section -->
-         <section>
-            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner text-center d-flex align-items-center">
-                  <div class="carousel-item active">
-                    <img src="./assets/images/jwellery-6.jpg" class="d-block w-100 img-fluid" alt="..." >
-                    <div class="carousel-caption">
-                        <h5 class="carousel-text lh-base"> Discover the 
-                          <br>Best of the Best</h5>
-                        <button class="Shop-colle-btn mt-5">Shop Collection </button>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./assets/images/jwellery-5.jpg" class="d-block w-100 img-fluid" alt="...">
-                    <div class=" carousel-caption">
-                      <h5 class="carousel-text lh-base"> Oh,
-                      <br> Hello Newness!</h5>
-                        <button class="Shop-colle-btn mt-5">Shop Collection </button>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./assets/images/jwellery-7.jpg" class="d-block w-100 img-fluid" alt="...">
-                    <div class=" carousel-caption">
-                      <h5 class="carousel-text lh-base"> Discover the 
-                        <br>world of jewelry</h5>
-                        <button class="Shop-colle-btn mt-5">Shop Collection </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-         </section>
-         <!-- second Section -->
-          <section class="padding-sec">
-            <div class="container">
-              <div class="flat-title style-line">
-                <div class="line-title"></div>
-                <h4 class="fs-1">Discover Our Categories</h4>
-              </div>
-              <div class="row">
-                <div class="col-3">
-                  <div class="hover-img position-relative">
-                    <a href="">
-                      <img src="./assets/images/Categorie-1.jpg" alt=""  class="img-fluid">
-                    </a>
-                  </div>
-                  <div class="py-3 fs-4">
-                    <a href="">
-                      <span class="text-dark fw-medium">Necklaces</span>
-                    </a>
-                  </div>
-                </div>
-
-                <div class="col-3">
-                  <div>
-                    <a href="">
-                      <img src="./assets/images/Categorie-2.jpg" alt="" class="img-fluid">
-                    </a>
-                  </div>
-                  <div class="py-3 fs-4">
-                    <a href="">
-                      <span class="text-dark fw-medium">Bracelets</span>
-                    </a>
-                  </div>
-                </div>
-                
-                <div class="col-3">
-                  <div>
-                    <a href="">
-                      <img src="./assets/images/Categories-3.jpg" alt="" class="img-fluid">
-                    </a>
-                  </div>
-                  <div class="py-3 fs-4">
-                    <a href="">
-                      <span class="text-dark fw-medium">Earrings</span>
-                    </a>
-                  </div>
-                </div>
-                <div class="col-3">
-                  <div>
-                    <a href="">
-                      <img src="./assets/images/Categories-4.jpg" alt="" class="img-fluid">
-                    </a>
-                  </div>
-                  <div class="py-3 fs-4">
-                    <a href="">
-                      <span class="text-dark fw-medium">Rings</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/images/jwellery-5.jpg" class="d-block w-100 img-fluid" alt="...">
+            <div class=" carousel-caption">
+              <h5 class="carousel-text lh-base"> Oh,
+                <br> Hello Newness!
+              </h5>
+              <button class="Shop-colle-btn mt-5">Shop Collection </button>
             </div>
-          </section>
-
-          <!-- add to cart section -->
-           <section>
-            <div class="container">
-              <div class="row" id="product">
-                
-                
-              </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/images/jwellery-7.jpg" class="d-block w-100 img-fluid" alt="...">
+            <div class=" carousel-caption">
+              <h5 class="carousel-text lh-base"> Discover the
+                <br>world of jewelry
+              </h5>
+              <button class="Shop-colle-btn mt-5">Shop Collection </button>
             </div>
-           </section>
-    </main>
-    <script src="./assets/js/script.js"></script>
-    <script src="./assets/js/bootstrap.js"></script>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- second Section -->
+    <section class="padding-sec">
+      <div class="container">
+        <div class="flat-title style-line">
+          <div class="line-title"></div>
+          <h4 class="fs-1">Discover Our Categories</h4>
+        </div>
+        <div class="row">
+          <div class="col-3">
+            <div class="hover-img  product-image">
+              <a href="">
+                <img src="./assets/images/Categorie-1.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+            <div class="py-3 fs-4">
+              <a href="">
+                <span class="text-dark fw-medium">Necklaces</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-3">
+            <div class="product-image">
+              <a href="">
+                <img src="./assets/images/Categorie-2.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+            <div class="py-3 fs-4 ">
+              <a href="">
+                <span class="text-dark fw-medium">Bracelets</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-3">
+            <div class="product-image">
+              <a href="">
+                <img src="./assets/images/Categories-3.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+            <div class="py-3 fs-4 ">
+              <a href="">
+                <span class="text-dark fw-medium">Earrings</span>
+              </a>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="product-image">
+              <a href="">
+                <img src="./assets/images/Categories-4.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+            <div class="py-3 fs-4">
+              <a href="">
+                <span class="text-dark fw-medium">Rings</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- add to cart section -->
+    <section>
+      <div class="container">
+        <div class="row" id="product">
+
+
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/bootstrap.js"></script>
 </body>
+
 </html>

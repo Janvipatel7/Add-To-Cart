@@ -34,25 +34,21 @@ function addToCart(productId){
     let product =  products.find((item) => {
         return productId == item.id
     })
-
-
-    
     let productIdx =  cartArr.findIndex((item) => {
         return item.id == productId
     })
     if (productIdx !== -1) {
         cartArr[productIdx].quantity++;
+        alert("item already added")
     }else{
         product.quantity = 1;
         cartArr.push(product);
     }
-;
-    
 
     localStorage.setItem("cart" , JSON.stringify(cartArr))
     counter.innerHTML = cartArr.length
-   
 }
+counter.innerHTML = cartArr.length
 
 let productsElement = document.getElementById("product");
 products.forEach((product , idx) => {

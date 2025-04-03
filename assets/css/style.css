@@ -13,6 +13,23 @@ a{
     font-size: 65px;
     line-height: 40px;
 }
+.btn-header{
+ border: none;
+ background-color: none;
+ font-size: 17px;
+}
+button{
+    background: none;
+}
+ul{
+    user-select: none;
+}
+.navbar-brand{
+    user-select: none;
+}
+.btn-header i{
+    font-weight: bolder !important;
+}
 .Shop-colle-btn{
     padding: 14px 38px;
     color: white;
@@ -44,5 +61,49 @@ a{
     border: none;
     height: 45px;
     width: 45px;
+   
     border-radius: 3px;
+}
+
+.product-image{
+    overflow: hidden;
+}
+.product-image img{
+    transition: 1s all linear;
+}
+.product-image:hover a img{
+    transform: scale(1.1);
+}
+.bg-cart{
+    background-image: url(../images/bg-cart.jpg);
+    width: 100%;
+    height: 300px;
+    background-position: center;
+}
+
+.cart-title{
+    padding-block-start: 120px;
+}
+.bread-cart li a{
+    list-style: none !important;
+    color: grey;
+}
+.bread-cart .active{
+    color: black !important;
+}
+.allproduct-cart{
+    padding-top: 100px;
+}
+.cart-title{
+    font-family: "League Spartan", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.cart-section{
+    border-top: 1px solid rgba(0, 0, 0, 0.26);
+    border-left: 1px solid rgba(0, 0, 0, 0.26);
+    border-right: 1px solid rgba(0, 0, 0, 0.26);
+    border-radius: 2px;
+    overflow: hidden;
 }
