@@ -3,30 +3,67 @@ let counter = document.getElementById("counter");
 counter.innerHTML = cartArray.length;
 let cartItems = document.getElementById("cartItems");
 let totalAmount = 0;
+let shopTitle = document.querySelector(".shop-title");
+let card = document.querySelector(".card");
 
 
+function saveArr(){
+    localStorage.setItem("cart",JSON.stringify(cartArr))
+}
+
+function deleteItem(idx){
+    cartArr.splice(idx, 1);
+    saveArr();
+    displayCart()
+
+}
+
+function updateQuantity(idx, value){
+    let newQuantity = cartArr[idx].quantity + value;
+
+    if(newQuantity <= 0){
+        deleteItem(idx);
+    } else {
+        cartArr[idx].quantity = newQuantity;
+        saveArr();
+    }
+    displayCart();
+}
 
 
 function displayCart(){
     totalAmount = 0;
     cartItems.innerHTML = "";
 
+    function updateQuantity(idx, value){
+        let newQuantity = cartArr[idx].quantity + value;
+    
+        if(newQuantity <= 0){
+            deleteItem(idx);
+        } else {
+            cartArr[idx].quantity = newQuantity;
+            saveArr();
+        }
+        displayCart();
+    }   
+
     cartArray.forEach((shopitem,idx) => {
         let subTotal = shopitem.quantity *  shopitem.price;
         totalAmount += subTotal;
 
         cartItems.innerHTML += `
-         <div class="row py-2 px-2">
-                <div class="col-3">
-                    <div class="cart-image d-flex align-items-center">
+            <div class="row py-2 px-2">
+                <div class="col-6">
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="cart-image ">
                             <img src="${shopitem.image}" alt="" width="100px">
+                        </div>
+                         <div class="">
+                            <h3 class="m-0 fs-5 text-secondary">${shopitem.name}</h3>
+                        </div>
                     </div>
                 </div>
-                <div class="col-3">
-                    <div class="d-flex h-100 align-items-center ">
-                        <h3 class="m-0 fs-5 text-secondary">${shopitem.name}</h3>
-                    </div>
-                </div>
+                
                  
                 
                 <div class="col-2">
