@@ -1,6 +1,6 @@
 let cartArray = JSON.parse(localStorage.getItem("cart")) || [];
 let counter = document.getElementById("counter");
-counter.innerHTML = cartArray.lrngth;
+counter.innerHTML = cartArray.length;
 let cartItems = document.getElementById("cartItems");
 let totalAmount = 0;
 
@@ -17,14 +17,17 @@ function displayCart(){
 
         cartItems.innerHTML += `
          <div class="row py-2 px-2">
-                <div class="col-6">
+                <div class="col-3">
                     <div class="cart-image d-flex align-items-center">
-                            <img src="${shopitem.image}" alt="" width="100%">
+                            <img src="${shopitem.image}" alt="" width="100px">
                     </div>
-                     <div class="d-flex h-100 align-items-center ">
+                </div>
+                <div class="col-3">
+                    <div class="d-flex h-100 align-items-center ">
                         <h3 class="m-0 fs-5 text-secondary">${shopitem.name}</h3>
                     </div>
                 </div>
+                 
                 
                 <div class="col-2">
                     <div class="d-flex align-items-center h-100 justify-content-center">
