@@ -14,7 +14,9 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container">
-                <a class="navbar-brand fw-semibold fs-2" href="#">Eluxia</a>
+                <div class="logo" onclick="window.location=`./index.html`">
+                    <a class="navbar-brand fw-semibold fs-2" href="#">Eluxia</a>
+                </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -23,7 +25,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-3 fw-normal fs-5">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="#">Shop</a>
@@ -70,8 +72,7 @@
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb justify-content-center bread-cart">
                             <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item"><a href="#">Shop</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Shopping Cart</li>
+                            <li class="breadcrumb-item active" aria-current="page">Cart</li>
                         </ol>
                     </nav>
                 </div>
@@ -108,9 +109,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="border-bottom border-top border-start border-end fw-medium" id="show-cart">
+                <div class="border-bottom border-top border-start border-end fw-medium" id="cartItems"> 
 
-                    <div class="row py-2 px-2">
+                    <!-- <div class="row py-2 px-2">
                         <div class="col-1">
                             <div class="cart-image d-flex align-items-center">
                                 <img src="./assets/images/product-1.jpg" alt="" width="100%">
@@ -143,9 +144,13 @@
                                 <button type="button" class="border-0 fs-5 button"><i class="bi bi-x-circle"></i></button>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
-
+            </div>
+            <div class="col-3">
+                <div class="card" id="bill">
+                   
+                </div>
             </div>
         </section>
     </main>
