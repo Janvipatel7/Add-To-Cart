@@ -1,33 +1,28 @@
 let cartArray = JSON.parse(localStorage.getItem("cart")) || [];
 let counter = document.getElementById("counter");
-counter.innerHTML = cartArray.length;
 let cartItems = document.getElementById("cartItems");
 let totalAmount = 0;
-let shopTitle = document.querySelector(".shop-title");
-let card = document.querySelector(".card");
 
 
-function saveArr(){
-    localStorage.setItem("cart",JSON.stringify(cartArr))
-}
 
-function deleteItem(idx){
-    cartArr.splice(idx, 1);
+function removeItem(idx){
+    cartArray.splice(idx, 1);
     saveArr();
     displayCart()
-
+    counter.innerHTML = cartArray.length;
 }
 
+const saveArr = () =>{
+    localStorage.setItem("cart", JSON.stringify(cartArray))
+}
 function updateQuantity(idx, value){
-    let newQuantity = cartArr[idx].quantity + value;
-
-    if(newQuantity <= 0){
-        deleteItem(idx);
-    } else {
-        cartArr[idx].quantity = newQuantity;
-        saveArr();
-    }
-    displayCart();
+   cartArray[idx].quantity += value;
+   if(cartArray[idx].quantity < 1){
+    removeItem()
+   }else{
+    saveArr();
+   }
+   displayCart();
 }
 
 
@@ -87,7 +82,7 @@ function displayCart(){
                 <div class="col-2">
                     <div class="d-flex align-items-center justify-content-between h-100 gap-4">
                         <span class="fs-7 text-dark fw-semibold">${subTotal}</span>
-                        <button type="button" class="border-0 fs-5 button" onclick="deleteItem(${idx})">
+                        <button type="button" class="border-0 fs-5 button" onclick=" removeItem(${idx})">
                         <i class="bi bi-x-circle"></i>
                         </button>
                     </div>
