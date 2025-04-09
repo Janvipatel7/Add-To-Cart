@@ -55,7 +55,7 @@ products.forEach((product, idx) => {
 
   productsElement.innerHTML += `
           <div class="col-3">
-              <div class=" bg-unique box-shadow h-100">
+              <div class="product-wrapper bg-unique box-shadow h-100">
                 <div class="product-img p-4">
                   <img src="${product.image}" alt="${product.name}" class="img-fluid hide-bg">
                 </div>
