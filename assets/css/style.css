@@ -14,9 +14,9 @@ a{
     line-height: 40px;
 }
 .btn-header{
- border: none;
- background-color: none;
- font-size: 20px;
+    border: none;
+    background-color: none;
+    font-size: 20px;
 }
 button{
     background: none;
@@ -56,15 +56,15 @@ ul{
     padding-bottom: 120px;
 }
 .bg-color{
-    background-color: rgba(255, 0, 0, 0.767) !important;
+    background-color: #b99f4a!important;
     color:  white !important;
     border: none;
-    height: 45px;
-    width: 45px;
-   
-    border-radius: 3px;
+    padding: 10px 30px;
+    border-radius: 5px;
 }
-
+.cursor-pointer{
+    cursor: pointer;
+}
 .product-image{
     overflow: hidden;
 }
@@ -75,7 +75,7 @@ ul{
     transform: scale(1.1);
 }
 .bg-cart{
-    background-image: url(../images/bg-cart.jpg);
+    background-image: url('../images/bg-cart.jpg');
     width: 100%;
     height: 300px;
     background-position: center;
@@ -103,4 +103,23 @@ ul{
     border-radius: 50%;
     align-items: center !important;
     justify-content: center !important;
+}
+.item-bg{
+    background-color: rgba(128, 128, 128, 0.205);
+}
+.box-shadow{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.bg-unique{
+    background-color: #f9f9f9;
+}
+.btn-shop{
+    padding: 10px 30px;
+    border-radius: 4px;
+    font-size: 17px;
+}
+.btn-shop:hover{
+    background-color: black;
+    outline: none !important;
+    color: white;
 }
