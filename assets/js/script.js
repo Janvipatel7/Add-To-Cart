@@ -39,10 +39,25 @@ function addToCart(productId) {
   })
   if (productIdx !== -1) {
     // cartArr[productIdx].quantity++;
-    alert("item already added")
+    Swal.fire({
+            icon: "warning",
+            text: "Item Already Added !",
+            position: 'bottom-end',
+            toast: 'true',
+            showConfirmButton: false,
+            timer: 1500,
+        });
   } else {
     product.quantity = 1;
     cartArr.push(product);
+      Swal.fire({
+        icon: "success",
+        text: "Item added !",
+        position: 'bottom-start',
+        toast: 'true',
+        showConfirmButton: false,
+        timer: 1500,
+    });
   }
 
   localStorage.setItem("cart", JSON.stringify(cartArr))
