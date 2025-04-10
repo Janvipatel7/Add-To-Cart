@@ -14,130 +14,84 @@
 <body>
   <header class="position-sticky top-0 bg-white shadow z-2">
     <div class="header-center-section p-3 d-none d-md-block">
-        <div class="container">
-            <div class="head-center d-flex align-items-center justify-content-evenly">
-                <div class="logo" onclick="window.location=`./index.html`">
-                    <h2> Eluxia</h1>
-                </div>
-                <div class="menu-list">
-                    <ul class="d-flex align-items-center justify-content-center gap-3 m-0 fs-5">
-                        <li>Home</li>
-                        <li>Shop</li>
-                        <li>Pages</li>
-                        <li>About</li>
-                        <li>Contact</li>
-                    </ul>
-                </div>
-                <div class="cart-items d-flex align-items-center gap-3">
-                  <div class="user">
-                      <div>
-                          <button class="user-btn"><i class="bi bi-person"></i></button>
-                      </div>
-                  </div>
-                    <div class="cart">
-                        <button type="button" class="cart-btn position-relative"
-                            onclick="window.location=`./cart.html`">
-                            <i class="bi bi-cart"></i>
-                            <span
-                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
-                                id="counter">
-                            </span>
-                        </button>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="head-center d-flex align-items-center justify-content-evenly">
+          <div class="logo" onclick="window.location=`./index.html`">
+            <h2> Eluxia</h1>
+          </div>
+          <div class="menu-list">
+            <ul class="d-flex align-items-center justify-content-center gap-3 m-0 fs-5">
+              <li>Home</li>
+              <li>Shop</li>
+              <li>Pages</li>
+              <li>About</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+          <div class="cart-items d-flex align-items-center gap-3">
+            <div class="user">
+              <div>
+                <button class="user-btn"><i class="bi bi-person"></i></button>
+              </div>
             </div>
+            <div class="cart">
+              <button type="button" class="cart-btn position-relative" onclick="window.location=`./cart.html`">
+                <i class="bi bi-cart"></i>
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                  id="counter">
+                </span>
+              </button>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <div>
-        <div class="responsive-header p-3 d-md-none d-flex justify-content-between alig-items-center shadow-sm">
-          <div class="logo" onclick="window.location=`./index.html`">
-            <h2> Eluxia</h1>
+      <div class="responsive-header p-3 d-md-none d-flex justify-content-between alig-items-center shadow-sm">
+        <div class="logo" onclick="window.location=`./index.html`">
+          <h2> Eluxia</h1>
         </div>
-            <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"
-                aria-controls="mobileMenu">
-                <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="20" height="2" fill="#1D1D1D"></rect>
-                    <rect y="6" width="20" height="2" fill="#1D1D1D"></rect>
-                    <rect y="12" width="20" height="2" fill="#1D1D1D"></rect>
-                </svg>
-            </button>
-        </div>
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
-            <div class="offcanvas-header d-flex align-items-center justify-content-between">
-                <h5 class="offcanvas-title fw-semibold" id="offcanvasWithBothOptionsLabel">MENU</h5>
-                <div class="d-flex align-items-center gap-3">
-                    <div class="cart close-btn rounded-circle d-flex align-items-center justify-content-center">
-                        <button type="button" class="cart-btn position-relative"
-                            onclick="window.location=`./cart.html`">
-                            <i class="bi bi-cart  "></i>
-                            <span
-                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
-                                id="counter">
-                            </span>
-                        </button>
-                    </div>
-                    <div class="close-btn rounded-circle d-flex align-items-center justify-content-center">
-                        <i class="bi bi-x fs-4 text-white" data-bs-dismiss="offcanvas" aria-label="Close"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="offcanvas-body">
-                <ul class="list-unstyled d-flex flex-column gap-3 fs-5">
-                    <li>Home</li>
-                    <li>Shop</li>
-                    <li>Pages</li>
-                    <li>About</li>
-                    <li>Contact</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</header>
-
-  <!-- <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container">
-        <div class="logo"> <a class="navbar-brand fw-semibold fs-2" href="#">Eluxia</a></div>
-        <button class="navbar-toggler" type="button"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample">
-          <span class="navbar-toggler-icon"></span>
+        <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"
+          aria-controls="mobileMenu">
+          <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="20" height="2" fill="#1D1D1D"></rect>
+            <rect y="6" width="20" height="2" fill="#1D1D1D"></rect>
+            <rect y="12" width="20" height="2" fill="#1D1D1D"></rect>
+          </svg>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-3 fw-normal fs-5">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Shop</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Products</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Pages</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Contact</a>
-            </li>
+      </div>
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+        <div class="offcanvas-header d-flex align-items-center justify-content-between">
+          <h5 class="offcanvas-title fw-semibold" id="offcanvasWithBothOptionsLabel">MENU</h5>
+          <div class="d-flex align-items-center gap-3">
+            <div class="cart close-btn rounded-circle d-flex align-items-center justify-content-center">
+              <button type="button" class="cart-btn position-relative" onclick="window.location=`./cart.html`">
+                <i class="bi bi-cart  "></i>
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                  id="counter2">
+                </span>
+              </button>
+            </div>
+            <div class="close-btn rounded-circle d-flex align-items-center justify-content-center">
+              <i class="bi bi-x fs-4 text-white" data-bs-dismiss="offcanvas" aria-label="Close"></i>
+            </div>
+          </div>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="list-unstyled d-flex flex-column gap-3 fs-5">
+            <li>Home</li>
+            <li>Shop</li>
+            <li>Pages</li>
+            <li>About</li>
+            <li>Contact</li>
           </ul>
-          <form class="d-flex gap-3" role="search">
-            <button class="btn-header"><i class="bi bi-person"></i></button>
-            <button type="button" class="btn-header position-relative" onclick="window.location='./cart.html'">
-              <i class="bi bi-bag-check"></i>
-              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
-                id="counter">
-                0
-                <span class="visually-hidden">unread messages</span>
-              </span>
-            </button>
-          </form>
         </div>
       </div>
-    </nav>
-  </header> -->
+    </div>
+  </header>
+
+
   <main>
     <!-- hero Section -->
     <section>
@@ -181,7 +135,7 @@
           <h4 class="fs-1">Discover Our Categories</h4>
         </div>
         <div class="row">
-          <div class="col-3">
+          <div class="col-lg-3 col-md-4 col-sm-6">
             <div class="hover-img  product-image">
               <a href="">
                 <img src="./assets/images/Categorie-1.jpg" alt="" class="img-fluid">
@@ -194,7 +148,7 @@
             </div>
           </div>
 
-          <div class="col-3">
+          <div class="col-lg-3 col-md-4 col-sm-6">
             <div class="product-image">
               <a href="">
                 <img src="./assets/images/Categorie-2.jpg" alt="" class="img-fluid">
@@ -207,19 +161,19 @@
             </div>
           </div>
 
-          <div class="col-3">
+          <div class="col-lg-3 col-md-4 col-sm-6">
             <div class="product-image">
               <a href="">
                 <img src="./assets/images/Categories-3.jpg" alt="" class="img-fluid">
               </a>
             </div>
-            <div class="py-3 fs-4 ">
+            <div class="py-3 fs-4">
               <a href="">
                 <span class="text-dark fw-medium">Earrings</span>
               </a>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-lg-3 col-md-4 col-sm-6">
             <div class="product-image">
               <a href="">
                 <img src="./assets/images/Categories-4.jpg" alt="" class="img-fluid">
@@ -239,7 +193,7 @@
     <section class="py-5">
       <div class="container">
         <div class="row" id="product">
-          
+
         </div>
       </div>
     </section>
@@ -275,7 +229,7 @@
         </ul>
       </div>
     </div>
-  </div> 
+  </div>
   <script src="./assets/js/script.js"></script>
   <script src="./assets/js/bootstrap.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>

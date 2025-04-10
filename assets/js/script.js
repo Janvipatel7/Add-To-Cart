@@ -28,6 +28,7 @@ let products = [
 
 let cartArr = JSON.parse(localStorage.getItem("cart")) || [];
 let counter = document.getElementById("counter");
+let counter2 = document.getElementById("counter2");
 function addToCart(productId) {
 
 
@@ -62,34 +63,37 @@ function addToCart(productId) {
 
   localStorage.setItem("cart", JSON.stringify(cartArr))
   counter.innerHTML = cartArr.length
+  counter2.innerHTML = cartArr.length
 }
 counter.innerHTML = cartArr.length
+counter2.innerHTML = cartArr.length
 
 let productsElement = document.getElementById("product");
 products.forEach((product, idx) => {
 
   productsElement.innerHTML += `
-          <div class="col-3">
-              <div class="product-wrapper bg-unique box-shadow h-100">
-                <div class="product-img p-4">
-                  <img src="${product.image}" alt="${product.name}" class="img-fluid hide-bg">
-                </div>
-                <div class="cursor-pointer p-4">
-                  <div class="text-center">
-                    <h5 class="mt-2 fs-6 fw-semibold">${product.name}</h5>
+    <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="product-wrapper bg-unique box-shadow h-100">
+              <div class="product-img ">
+                <img src="${product.image}" alt="${product.name}" class="img-fluid hide-bg">
+              </div>
+              <div class="cursor-pointer  d-flex justify-content-between align-items-center">
+                <div>
+                  <div class="">
+                    <h5 class="mt-1 fs-6 fw-semibold">${product.name}</h5>
                   </div>
-                  <div class="d-flex align-items-center  justify-content-center">
-                    <p class="m-0 fs-5">$${product.price}</p>
+                  <div class="d-flex align-items-center justify-content-start">
+                    <p class="m-0 fs-6">$${product.price}</p>
                   </div>
-                  <div class="d-flex align-items-end height-100 justify-content-center mt-3">
-                    <button class="bg-color"  onclick = "addToCart(${product.id})">
-                      <i class="bi bi-cart3 ms-2"></i>
-                      Add to cart
-                    </button>
                 </div>
+                <div class="d-flex align-items-center height-100 justify-content-center  mt-1">
+                  <span class="bg-color"  onclick = "addToCart(${product.id})">
+                    <i class="bi bi-cart3 "></i>
+                  </span>
               </div>
             </div>
           </div>
+        </div>
 
    `
 })
