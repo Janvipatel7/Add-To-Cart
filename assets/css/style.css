@@ -199,3 +199,6 @@ ul{
     color: white;
     border: none !important;
 }
+.logo-text{
+    user-select: none;
+}

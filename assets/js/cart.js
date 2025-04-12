@@ -128,6 +128,6 @@ counter2.innerHTML = cartArray.length;
 
 function removeAll(){
     cartArray = [];
-    saveToLocal();
+    saveArr();
     displayCart();
 }
