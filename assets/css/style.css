@@ -189,4 +189,13 @@ ul{
     background-color: #34a853;
     color: white;
 }
-
+.clear-btn{
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+.clear-btn:hover{
+    background-color: #000;
+    color: white;
+    border: none !important;
+}

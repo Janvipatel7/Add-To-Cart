@@ -125,3 +125,9 @@ displayCart();
 
 counter.innerHTML = cartArray.length;
 counter2.innerHTML = cartArray.length;
+
+function removeAll(){
+    cartArray = [];
+    saveToLocal();
+    displayCart();
+}
